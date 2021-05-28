@@ -56,7 +56,7 @@
 }
 
 .social-row-item:hover,
-.social-row-item .fa {
+.social-row-item .fa:hover {
     background-color: #ffffff;
     cursor: pointer;
     color: #0bbba0;
