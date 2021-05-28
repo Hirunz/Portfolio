@@ -46,6 +46,13 @@
     align-items: center;
 }
 
+.fa {
+    display: inherit;
+    font: inherit;
+    font-size: inherit;
+}
+
+.social-row-item a:-webkit-any-link,
 .social-row-item a:link,
 .social-row-item a:hover,
 .social-row-item a:visited,
