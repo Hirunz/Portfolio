@@ -30,7 +30,8 @@
     <!-- navigation bar -->
     <div class="navbar">
         <div class="topnav" id="myTopnav">
-            <a href="#home">Home</a>
+            <a onclick="myFunction()" id="nav-title">Navigation</a>
+            <a href="">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#qualifications">Qualifications</a>
@@ -43,33 +44,37 @@
         </div>
         <div style="height: 1vh;"></div>
     </div>
+    <br>
 
     <div class="main-content">
 
         <!-- home page -->
-        <div style="height: 12vh;" id="home"></div>
+        <!-- <div style="height: 12vh;" id="home"></div> -->
         <div class="home-page">
             <div class="home-left">
-                <img src="images/profile_pic.png" alt="profile picture" height="100%">
+                <img src="images/website1.png" alt="profile picture" height="100%">
             </div>
 
             <div class="home-right">
-                <h3>Hello I'm</h3>
+                <h3 id="hello">Hello I'm</h3>
                 <h1>Hirun Kodituwakku</h1>
-                <h2>Software Engineering Intern</h2>
+                <h3> Software Engineering Intern</h3>
 
                 <div class="social">
                     <div class="social-item">
+                        <img src="images/icons/email.png" alt="">
                         <h4> hirunz2000@gmail.com</h4>
 
                     </div>
 
                     <div class="social-item">
+                        <img src="images/icons/phone.png" alt="">
                         <h4>+94768452198</h4>
 
                     </div>
 
                     <div class="social-item">
+                        <img src="images/icons/location.png" alt="">
                         <h4>Galle, Sri Lanka.</h4>
 
                     </div>
@@ -82,7 +87,7 @@
         </div>
 
         <div style="height: 10vh;" id="about"></div>
-        <div class="d" id="about">
+        <div class="d">
             about
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a dictum enim, ac interdum leo. Nam porta mauris vitae sem tincidunt condimentum. Pellentesque vel finibus erat. Duis at orci sed quam ultricies imperdiet sed non lorem. Maecenas libero leo,
@@ -116,13 +121,16 @@
         </div>
 
         <div style="height: 10vh;" id="skills"></div>
-        <div class="d" id="skills">
+        <div class="d">
             skills
 
         </div>
 
 
     </div>
+
+
+
 
 </body>
 

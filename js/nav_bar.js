@@ -2,9 +2,11 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         var height = screen.height;
-        if (scroll > height) {
+        if ($(window).scroll) {
             $(".navbar").css("background", "#1f1f25");
-        } else {
+        }
+
+        if (scroll < 10) {
             $(".navbar").css("background", "#100e17");
         }
 
@@ -18,15 +20,14 @@ $(function() {
     var navHeight = $(".navbar").outerHeight(true);
     console.log(navHeight)
     $(".main-content").css("margin-top", navHeight);
-});
 
-$(function() {
-    $('.topnav a').click(function() {
-        $('.topnav a').removeClass('active');
-        $(this).addClass('active');
-    });
-});
+    var viewHeight = $(window).height() - navHeight;
+    console.log(viewHeight)
+    if (viewHeight > 700) {
+        $(".home-page").css("height", viewHeight);
+    }
 
+});
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -36,3 +37,31 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+$(function() {
+    $('.topnav a').click(function() {
+        $('.topnav a').removeClass('active');
+        $(this).addClass('active');
+
+
+        // animation
+        var full_url = this.href;
+
+        //split the url by # and get the anchor target name - home in mysitecom/index.htm#home
+        var parts = full_url.split("#");
+        var trgt = parts[1];
+
+
+        //get the top offset of the target anchor
+        var target_offset = $("#" + trgt).offset();
+
+        if (target_offset != undefined) {
+            var target_top = target_offset.top;
+
+            $('html, body').animate({ scrollTop: target_top }, 1500);
+            myFunction()
+        }
+
+    });
+
+});
