@@ -46,12 +46,6 @@
     align-items: center;
 }
 
-.fa {
-    display: inherit;
-    font: inherit;
-    font-size: inherit;
-}
-
 .social-row-item a:-webkit-any-link,
 .social-row-item a:link,
 .social-row-item a:hover,
@@ -61,7 +55,8 @@
     color: inherit;
 }
 
-.social-row-item:hover {
+.social-row-item:hover,
+.social-row-item .fa {
     background-color: #ffffff;
     cursor: pointer;
     color: #0bbba0;
@@ -73,7 +68,8 @@
     transition: all 0.5s;
 }
 
-.social-row-item {
+.social-row-item,
+.social-row-item .fa {
     display: inline-block;
     width: 2rem;
     padding: 0.3rem;
