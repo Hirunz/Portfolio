@@ -55,7 +55,7 @@
     color: inherit;
 }
 
-.social-row-item:hover .social-row-item .fa:hover {
+.social-row-item:hover .social-row-item {
     background-color: #ffffff;
     cursor: pointer;
     color: #0bbba0;
