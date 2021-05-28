@@ -55,7 +55,7 @@
     color: inherit;
 }
 
-.social-row-item .fa:hover {
+.social-row-item:hover {
     background-color: #ffffff;
     cursor: pointer;
     color: #0bbba0;
@@ -67,8 +67,11 @@
     transition: all 0.5s;
 }
 
-.social-row-item,
-.social-row-item .fa {
+.fa {
+    display: none;
+}
+
+.social-row-item {
     display: inline-block;
     width: 2rem;
     padding: 0.3rem;
