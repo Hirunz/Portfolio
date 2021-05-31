@@ -21,11 +21,13 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/home-page.css">
     <link rel="stylesheet" href="css/about-page.css">
+    <link rel="stylesheet" href="css/experience.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/nav_bar.js"></script>
+    <script src="js/experience.js"></script>
 
 
 
@@ -40,7 +42,10 @@
             <a onclick="myFunction()" id="nav-title">Navigation</a>
             <a href="">Home</a>
             <a href="#about">About</a>
-            <a href="#qualifications">Qualifications</a>
+
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experiences</a>
+
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
             <a href="#cv">Download CV</a>
@@ -172,9 +177,108 @@
 
         </div>
 
-        <div style="height: 10vh;" id="skills"></div>
-        <div class="d">
-            skills
+        <div style="height: 10vh;" id="experience"></div>
+        <h2 style="text-align: center;">Experiences</h2>
+        <div class="experience">
+            <div class="exp-left">
+                <h3>Education</h3>
+                <div class="exp-box">
+                    <div class="exp-heading">
+                        <h3>Primary and Secondary Education</h3>
+                    </div>
+                    <div class="exp-place">
+                        <h5>Richmond College Galle</h5>
+                    </div>
+                    <div class="exp-period">
+                        <h5>2005-2019</h5>
+                    </div>
+                    <div class="exp-box-content">
+                        <p>Completed G.C.E. Ordinary Level (O/L) and G.C.E. Advanced Level (A/L)</p>
+                        <p style="text-align: center;">Results</p>
+                        <div class="exp-results">
+                            <div class="exp-popup" onclick="expPopup1()">G.C.E O/L
+                                <span class="exp-popuptext" id="expPopup1">
+                                    <div class=".exp-popup-content">
+                                        <p>9A Passes</p>
+                                        <p>Optional Subjects</p>
+                                        <ul>
+                                            <li>Commerce</li>
+                                            <li>English Literature</li>
+                                            <li>ICT</li>
+                                        </ul>
+                                    </div>
+    
+                                </span>
+                            </div>
+
+                            <div class="exp-popup" onclick="expPopup2()">G.C.E A/L
+                                <span class="exp-popuptext2" id="expPopup2">
+                                    <div class=".exp-popup-content">
+                                        <p>Physical Science -Maths Stream</p>
+                                        <p>2019 - New Syllabus</p>
+                                        <p>Subjects</p>
+                                        <ul>
+                                            <li>Combined Mathematics - A</li>
+                                            <li>Chemistry - B</li>
+                                            <li>Physics - B</li>
+                                        </ul>
+                                        <p>Z score- 1.7028</p>
+                                        <p>District Rank - 101</p>
+                                    </div>
+    
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-box">
+                    <div class="exp-heading">
+                        <h3>BEng (hons) Software Engineering</h3>
+                    </div>
+                    <div class="exp-place">
+                        <h5>Informatics Institute of Technology (IIT) </h5>
+                    </div>
+                    <div class="exp-period">
+                        <h5>2020-present</h5>
+                    </div>
+                    <div class="exp-box-content">
+                        <p>Currently following a software engineering degree program at Informatics Instutue<br> of Technology, Wellewatte, Sri Lanka which is affiliated with University of</p>
+
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="exp-right">
+                <h3>Work</h3>
+                <div class="exp-box">
+                    <div class="exp-heading">
+                        <h3>Software Engineering Intern</h3>
+                    </div>
+                    <div class="exp-place">
+                        <h5>99X Technology</h5>
+                    </div>
+                    <div class="exp-period">
+                        <h5>2021-present</h5>
+                    </div>
+                    <div class="exp-box-content">
+                        <p>Currently working as a software engineering intern at 99X Technology.</p>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
 
         </div>
 
