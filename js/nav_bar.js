@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    // set navigation bar colour only if scrolled.
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         var height = screen.height;
@@ -18,16 +19,18 @@ $(document).ready(function() {
 $(function() {
     // set main content lower than navbar
     var navHeight = $(".navbar").outerHeight(true);
-    console.log(navHeight)
+    // console.log(navHeight)
     $(".main-content").css("margin-top", navHeight);
 
     var viewHeight = $(window).height() - navHeight;
-    console.log(viewHeight)
+    // console.log(viewHeight)
     if (viewHeight > 700) {
         $(".home-page").css("height", viewHeight);
     }
 
 });
+
+// top navigation --> responsive 
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
