@@ -14,6 +14,7 @@ $(document).ready(function() {
 
     });
 
+    // function for exp page
     // get all elements with class -> exp-popup  (it contains the popup)
     const popup = document.getElementsByClassName("exp-popup");
     //  get all the elements with class -> exp-popup-toggle (it has the popup box content)
