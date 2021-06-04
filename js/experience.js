@@ -1,14 +1,32 @@
-function expPopup1() {
-    var popup = document.getElementById("expPopup1");
-    popup.classList.toggle("show");
+// A script to add an event listener to the popup box
 
-    document.getElementById("expPopup2").classList.remove("show");
+document.addEventListener("DOMContentLoaded", function(event) {
 
-}
+    // get all elements with class -> exp-popup  (it contains the popup)
+    const popup = document.getElementsByClassName("exp-popup");
+    //  get all the elements with class -> exp-popup-toggle (it has the popup box content)
+    const popupContent = document.getElementsByClassName("exp-popup-toggle");
 
-function expPopup2() {
-    var popup = document.getElementById("expPopup2");
-    popup.classList.toggle("show");
 
-    document.getElementById("expPopup1").classList.remove("show");
-}
+    // for each popup box, on click -> add/remove "show" class from the relevant popup-box-content
+    //  also, hide all the other popup contents, if they are shown. 
+    for (let i = 0; i < popup.length; i++) {
+        popup[i].addEventListener('click', function() {
+            var p = popupContent[i];
+            p.classList.toggle("show");
+
+            for (let j = 0; j < popup.length; j++) {
+                if (j === i) {
+                    continue;
+                }
+                var popup2 = popupContent[j];
+                if (popup2.classList.contains("show")) {
+                    popup2.classList.remove("show");
+                }
+            }
+
+        });
+    }
+
+
+});
