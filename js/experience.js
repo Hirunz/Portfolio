@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // for each popup box, on click -> add/remove "show" class from the relevant popup-box-content
     //  also, hide all the other popup contents, if they are shown. 
     for (let i = 0; i < popup.length; i++) {
+        console.log("this is working")
         popup[i].addEventListener('click', function() {
             var p = popupContent[i];
             p.classList.toggle("show");
