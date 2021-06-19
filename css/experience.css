@@ -33,6 +33,12 @@
     margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 1500px) {
+    .exp-box {
+        max-width: 400px;
+    }
+}
+
 .exp-box h3 {
     margin-top: 0;
     /* font-size: 0.9em; */

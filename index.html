@@ -22,12 +22,13 @@
     <link rel="stylesheet" href="css/home-page.css">
     <link rel="stylesheet" href="css/about-page.css">
     <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/nav_bar.js"></script>
-    <script src="js/experience.js"></script>
+
 
 
 
@@ -502,23 +503,49 @@
 
 
 
-        <div style="height: 10vh;" id="experience"></div>
-        <h2 style="text-align: center;">Experiences</h2>
+        <div style="height: 10vh;" id="contact"></div>
+        <h2 style="text-align: center;">Contact Me</h2>
         <div class="contact">
-            <form action="https://formspree.io/f/xqkwqvwk" method="POST">
-                <label>
-              Your email:
-              <input type="email" name="_replyto">
-            </label>
-                <label>
-              Your message:
-              <textarea name="message"></textarea>
-            </label>
+            <form action="https://formspree.io/f/xqkwqvwk" method="POST" target="_blank">
 
-                <!-- your other form fields go here -->
+                <div class="contact-box">
 
-                <button type="submit">Send</button>
+                    <div class="contact-field">
+                        <label>
+                            Name:   &nbsp;&nbsp;&nbsp;                        
+                        </label>
+                        <input type="text" name="message" required>
+                    </div>
+
+                    <div class="contact-field">
+                        <label>
+                            Email: &nbsp;&nbsp;                          
+                        </label>
+                        <input type="email" name="_replyto" required>
+                    </div>
+
+                    <div class="contact-field">
+                        <label>
+                            Message:                            
+                        </label>
+                        <textarea name="message" required cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="contact-field">
+                        <label>
+                            Phone:      &nbsp;&nbsp;                       
+                        </label>
+                        <input type="tel" name="message" />
+                    </div>
+
+                    <button class="button" type="submit">Send</button>
+                </div>
+
             </form>
+
+            <div class="contact-img">
+                <img src="images/contact.png" alt="">
+            </div>
 
         </div>
 
@@ -543,7 +570,8 @@
     </div>
     <!-- end of main - content -->
 
-
+    <div style="height: 10vh;" id="experience"></div>
+    <div style="height: 10vh;" id="experience"></div>
 
 
 </body>
