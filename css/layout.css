@@ -45,7 +45,7 @@ body {
 }
 
 .topnav a:hover {
-    /* background-color: #100e17; */
+    background-color: inherit;
     color: #0bbba0;
 }
 
