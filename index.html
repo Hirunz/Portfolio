@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/home-page.css">
     <link rel="stylesheet" href="css/about-page.css">
+    <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/experience.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,6 +29,7 @@
     <!-- js -->
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/nav_bar.js"></script>
+
 
 
 
@@ -41,7 +43,7 @@
     <div class="navbar">
         <div class="topnav" id="myTopnav">
             <a onclick="myFunction()" id="nav-title">Navigation</a>
-            <a href="">Home</a>
+            <a href="#home">Home</a>
             <a href="#about">About</a>
 
             <a href="#skills">Skills</a>
@@ -49,7 +51,7 @@
 
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-            <a href="#cv">Download CV</a>
+            <a href="downloads/MyCV.pdf" target="_blank" download="Hirun_Kodituwakku">Download CV</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -57,8 +59,10 @@
         <div style="height: 1vh;"></div>
     </div>
     <br>
-
+    <div id="home"></div>
     <div class="main-content">
+
+
 
         <!-- -------------------------------------------------------HOME PAGE CONTENT--------------------------------------------------------------------------- -->
         <div class="home-page">
@@ -174,8 +178,205 @@
             </div>
 
 
-            <!-- ---------------------------------------------------------------- EXPERIENCE PAGE CONTENT---------------------------------------------------------------------------------- -->
         </div>
+
+        <div style="height: 10vh;" id="skills"></div>
+        <h2 style="text-align: center;">Skills</h2>
+        <div class="skills">
+            <div>
+                <h3>Technical Skills</h3>
+
+                <div class="tech-skills">
+                    <!-- ----------------- Web Technologies -------------------------------->
+
+                    <div class="skill-type">
+                        <h4>Web Development</h4>
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/html5-w.png" alt="html5 icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>HTML5</h5>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/css3-w.png" alt="css3 icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>CSS</h5>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/js-w.png" alt="javascript icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>Javascript</h5>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/angular-w.png" alt="angular icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>Angular</h5>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/react-w.png" alt="react icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>React</h5>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- ----------------- Mobile Technologies -------------------------------->
+                    <div class="skill-type">
+                        <h4>Mobile Development</h4>
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/android-w.png" alt="Android icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>Android</h5>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/flutter-w.png" alt="flutter icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>Flutter</h5>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- ----------------- Database Technologies -------------------------------->
+                    <div class="skill-type">
+                        <h4>Database</h4>
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/database-w.png" alt="database icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>FireStore</h5>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/database-w.png" alt="database icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>MYSQL</h5>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/database-w.png" alt="database icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>SQLITE</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ----------------- Other Technologies -------------------------------->
+                    <div class="skill-type">
+                        <h4>Other</h4>
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/git-w.png" alt="Git icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>Git</h5>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/java-w.png" alt="java icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>Java</h5>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/python-w.png" alt="python icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>Python</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ----------------- Graphic Designing and VIdeo Editing-------------------------------->
+                    <div class="skill-type">
+                        <h4>Graphic Designing</h4>
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/PS-w.png" alt="Photoshop icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>Photoshop</h5>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/LR-w.png" alt="Lightroom icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>Lightroom</h5>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="images/icons/filmora-w.png" alt="Filmora icon">
+                            </div>
+                            <div class="skill-name">
+                                <h5>Filmora</h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+            <!-- -------------------------------------------Soft Skills ------------------------------------ -->
+            <div class="soft-skills">
+                <h3>Soft Skills</h3>
+                <div class="skill-type">
+                    <ul>
+                        <li>Leadership</li>
+                        <li>Team Player</li>
+                        <li>Problem Solver</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------------------------------------------------- EXPERIENCE PAGE CONTENT---------------------------------------------------------------------------------- -->
 
         <div style="height: 10vh;" id="experience"></div>
         <h2 style="text-align: center;">Experiences</h2>
@@ -395,7 +596,7 @@
                     </div>
 
                     <div class="exp-box-content">
-                        <p> Participated in PyHack 2021, a Python coding competition organized by the IEEE WIE Affinity Group of Informatics Institute of Technology and ranked in 5th place.
+                        <p> Participated in PyHack 2021, a Python coding competition organized by the IEEE WIE Affinity Group of Informatics Institute of Technology and ranked in 6th place.
                         </p>
 
                         <div class="exp-popup"> View Certificate -->
