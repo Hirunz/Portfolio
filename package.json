@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "https:hirunz.github.io/public",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
