@@ -1,5 +1,6 @@
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-scroll';
 
 const TopNavbar = () => {
   const { t, i18n } = useTranslation();
@@ -14,18 +15,31 @@ const TopNavbar = () => {
     i18n.changeLanguage(language);
   };
 
+  const PageLink = (props: { id: string; translationKey: string }) => {
+    return (
+      <Nav.Link
+        as={Link}
+        to={props.id}
+        smooth={true}
+        className='nav-link'
+        style={{ cursor: 'pointer' }}
+      >
+        {getTranslationKey(props.translationKey)}
+      </Nav.Link>
+    );
+  };
+
   const NavBarItems = () => {
     return (
       <>
-        <Nav.Link href='#home'>{getTranslationKey('HOME')}</Nav.Link>
-        <Nav.Link href='#about'>{getTranslationKey('ABOUT')}</Nav.Link>
-        <Nav.Link href='#skills'>{getTranslationKey('SKILLS')}</Nav.Link>
-        <Nav.Link href='#experiences'>
-          {getTranslationKey('EXPERIENCES')}
-        </Nav.Link>
-        <Nav.Link href='#projects'>{getTranslationKey('PROJECTS')}</Nav.Link>
-        <Nav.Link href='#contact'>{getTranslationKey('CONTACT')}</Nav.Link>
-        <Nav.Link href='#cv'>{getTranslationKey('CV')}</Nav.Link>
+        <PageLink id={'home'} translationKey={'HOME'} />
+        <PageLink id={'about'} translationKey={'ABOUT'} />
+        <PageLink id={'skills'} translationKey={'SKILLS'} />
+        <PageLink id={'experiences'} translationKey={'EXPERIENCES'} />
+        <PageLink id={'projects'} translationKey={'PROJECTS'} />
+        <PageLink id={'contact'} translationKey={'CONTACT'} />
+        <PageLink id={'cv'} translationKey={'CV'} />
+
         <Nav>
           <NavDropdown
             title={`${getTranslationKey('LANGUAGE_TITLE')}`}
@@ -59,10 +73,10 @@ const TopNavbar = () => {
   };
 
   return (
-    <Navbar bg='white' expand='lg'>
+    <Navbar bg='navbar navbar-dark bg-dark' expand='lg' fixed='top'>
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
-        <Nav className='mr-auto'>
+        <Nav className=' mx-lg-auto'>
           <NavBarItems />
         </Nav>
       </Navbar.Collapse>

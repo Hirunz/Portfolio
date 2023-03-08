@@ -4,14 +4,17 @@ import TopNavbar from './Components/Navbar/Navbar';
 import '@fontsource/roboto';
 
 import AccessibilityIcon from '@mui/icons-material/Accessibility';
-import Home from './Components/Navbar/Pages/Home/HomePage';
-import About from './Components/Navbar/Pages/About/AboutPage';
-import Contact from './Components/Navbar/Pages/Contact/ContactPage';
+import Home from './Components/Pages/Home/HomePage';
+import About from './Components/Pages/About/AboutPage';
+import Contact from './Components/Pages/Contact/ContactPage';
 
 function App() {
   return (
-    <div>
-      <TopNavbar />
+    <div className='d-flex flex-column'>
+      <div className='d-flex flex-column w-100'>
+        <TopNavbar />
+      </div>
+
       <Home />
       <About />
       <Contact />

@@ -1,13 +1,13 @@
 import React from 'react';
-import { TestBR } from '../Home/HomePage';
+import { TestBR } from '../../Temp/ScrollTest';
 
 function About() {
   return (
-    <div id='about'>
+    <section id='about'>
       <h2>About Page</h2>
       <p>Welcome to the about page</p>
       <TestBR />
-    </div>
+    </section>
   );
 }
 
