@@ -1,0 +1,11 @@
+{
+  "NAVBAR": {
+    "HOME": "Inicio",
+    "ABOUT": "Acerca de",
+    "SKILLS": "Habilidades",
+    "EXPERIENCES": "Experiencias",
+    "PROJECTS": "Proyectos",
+    "CONTACT": "Contacto",
+    "CV": "CV"
+  }
+}

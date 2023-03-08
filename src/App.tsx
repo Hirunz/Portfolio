@@ -1,16 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
+import './i18n';
 import './App.css';
+import TopNavbar from './Components/Navbar/Navbar';
+import '@fontsource/roboto';
+
+import AccessibilityIcon from '@mui/icons-material/Accessibility';
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <h2>Something is cooking...</h2>
-        <p>...............................</p>
-        <h4>Hang Tight !</h4>
-      </header>
+    <div>
+      <TopNavbar />
+      <div className='container-fluid'>{<AccessibilityIcon />}</div>
     </div>
   );
 }

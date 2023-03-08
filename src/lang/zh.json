@@ -1,0 +1,11 @@
+{
+  "NAVBAR": {
+    "HOME": "主页",
+    "ABOUT": "关于我",
+    "SKILLS": "技能",
+    "EXPERIENCES": "经验",
+    "PROJECTS": "项目",
+    "CONTACT": "联系方式",
+    "CV": "简历"
+  }
+}
