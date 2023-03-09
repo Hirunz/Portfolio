@@ -1,14 +1,29 @@
-import React from 'react';
-import { TestBR } from '../../Temp/ScrollTest';
+import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Unstable_Grid2';
+import ExperienceModal from './ExperienceModal';
 
-function Contact() {
+const ExperiencesPage = () => {
   return (
-    <div id='experiences'>
-      <h2>Contact Page</h2>
-      <p>Welcome to the contact page</p>
-      <TestBR />
-    </div>
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2}>
+        <Grid xs={6} md={8}>
+          <ExperienceModal />
+        </Grid>
+        <Grid xs={6} md={4}>
+          <ExperienceModal />
+        </Grid>
+        <Grid xs={6} md={4}>
+          <ExperienceModal />
+        </Grid>
+        <Grid xs={6} md={8}>
+          <ExperienceModal />
+        </Grid>
+      </Grid>
+    </Box>
   );
-}
+};
 
-export default Contact;
+export default ExperiencesPage;

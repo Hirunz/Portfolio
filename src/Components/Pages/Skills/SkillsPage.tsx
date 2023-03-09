@@ -3,9 +3,9 @@ import { TestBR } from '../../Temp/ScrollTest';
 
 function Contact() {
   return (
-    <div id='cv'>
-      <h2>Contact Page</h2>
-      <p>Welcome to the contact page</p>
+    <div id='skills'>
+      <h2>Skills Page</h2>
+      <p>Welcome to the skills page</p>
       <TestBR />
     </div>
   );

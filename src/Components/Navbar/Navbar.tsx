@@ -1,6 +1,9 @@
+import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
+import { Typography } from '@mui/material';
 
 const TopNavbar = () => {
   const { t, i18n } = useTranslation();
@@ -24,8 +27,23 @@ const TopNavbar = () => {
         className='nav-link'
         style={{ cursor: 'pointer' }}
       >
-        {getTranslationKey(props.translationKey)}
+        {
+          <Typography variant='body1'>
+            {getTranslationKey(props.translationKey)}
+          </Typography>
+        }
       </Nav.Link>
+    );
+  };
+
+  const LanguageSwitchDropDownItem = (props: {
+    language: string;
+    description: string;
+  }) => {
+    return (
+      <NavDropdown.Item onClick={() => handleLanguageChange(props.language)}>
+        {props.description}
+      </NavDropdown.Item>
     );
   };
 
@@ -45,27 +63,13 @@ const TopNavbar = () => {
             title={`${getTranslationKey('LANGUAGE_TITLE')}`}
             id='basic-nav-dropdown'
           >
-            <NavDropdown.Item onClick={() => handleLanguageChange('en')}>
-              English
-            </NavDropdown.Item>
-            <NavDropdown.Item onClick={() => handleLanguageChange('si')}>
-              Sinhala
-            </NavDropdown.Item>
-            <NavDropdown.Item onClick={() => handleLanguageChange('es')}>
-              Spanish
-            </NavDropdown.Item>
-            <NavDropdown.Item onClick={() => handleLanguageChange('de')}>
-              German
-            </NavDropdown.Item>
-            <NavDropdown.Item onClick={() => handleLanguageChange('fr')}>
-              French
-            </NavDropdown.Item>
-            <NavDropdown.Item onClick={() => handleLanguageChange('zh')}>
-              Mandarin
-            </NavDropdown.Item>
-            <NavDropdown.Item onClick={() => handleLanguageChange('ar')}>
-              Arabic
-            </NavDropdown.Item>
+            <LanguageSwitchDropDownItem language='en' description='English' />
+            <LanguageSwitchDropDownItem language='si' description='Sinhala' />
+            <LanguageSwitchDropDownItem language='es' description='Spanish' />
+            <LanguageSwitchDropDownItem language='de' description='German' />
+            <LanguageSwitchDropDownItem language='fr' description='French' />
+            <LanguageSwitchDropDownItem language='zh' description='Mandarin' />
+            <LanguageSwitchDropDownItem language='ar' description='Arabic' />
           </NavDropdown>
         </Nav>
       </>
