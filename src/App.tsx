@@ -16,22 +16,23 @@ import { Container } from '@mui/system';
 
 function App() {
   return (
-    <Container>
-      <div className='d-flex flex-column w-100 mb-80'>
-        <TopNavbar />
-      </div>
+    <div>
+      <Container maxWidth='xl'>
+        <div className='d-flex flex-column w-100'>
+          <TopNavbar />
+        </div>
+      </Container>
 
-      <div className='mt-5 pt-3'>
-        <Home />
+      <Home />
 
-        <About />
-        <SkillsPage />
-        <ExperiencesPage />
-        <ProjectsPage />
-        <Contact />
-        <CVPage />
-      </div>
-    </Container>
+      <About />
+
+      <SkillsPage />
+      <ExperiencesPage />
+      <ProjectsPage />
+      <Contact />
+      <CVPage />
+    </div>
   );
 }
 

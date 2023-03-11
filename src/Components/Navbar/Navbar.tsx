@@ -3,7 +3,8 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
-import { Typography } from '@mui/material';
+import { Divider, Typography } from '@mui/material';
+import ThemeColors from '../../Theme/Colours';
 
 const TopNavbar = () => {
   const { t, i18n } = useTranslation();
@@ -28,7 +29,7 @@ const TopNavbar = () => {
         style={{ cursor: 'pointer' }}
       >
         {
-          <Typography variant='body1'>
+          <Typography variant='body1' style={{ color: ThemeColors.primary }}>
             {getTranslationKey(props.translationKey)}
           </Typography>
         }
@@ -60,8 +61,9 @@ const TopNavbar = () => {
 
         <Nav>
           <NavDropdown
-            title={`${getTranslationKey('LANGUAGE_TITLE')}`}
-            id='basic-nav-dropdown'
+            // menuVariant='dark'
+            title={getTranslationKey('LANGUAGE_TITLE')}
+            id='nav-dropdown'
           >
             <LanguageSwitchDropDownItem language='en' description='English' />
             <LanguageSwitchDropDownItem language='si' description='Sinhala' />
@@ -77,13 +79,14 @@ const TopNavbar = () => {
   };
 
   return (
-    <Navbar bg='navbar navbar-dark bg-dark' expand='lg' fixed='top'>
+    <Navbar className='bg-dark' expand='md' fixed='top'>
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
-        <Nav className=' mx-lg-auto'>
+        <Nav className=' mx-md-auto'>
           <NavBarItems />
         </Nav>
       </Navbar.Collapse>
+      <Divider variant='fullWidth' absolute={true} sx={{ color: 'white' }} />
     </Navbar>
   );
 };
