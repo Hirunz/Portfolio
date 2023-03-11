@@ -8,5 +8,25 @@
     "PROJECTS": "Projects",
     "CONTACT": "Contact",
     "CV": "CV"
+  },
+  "HOME": {
+    "NAME": "Hirun Kodituwakku",
+    "CURRENT_STATUS": "Software Enginner",
+    "FACEBOOK_LINK": "https://www.facebook.com/hirun.kodituwaku/",
+    "EMAIL_LINK": "hirunz2000@gmail.com",
+    "PHONE": "+94768452198",
+    "HOME_CITY": "https://www.google.com/maps/place/Galle/@6.0558904,80.1769774,13z/data=!3m1!4b1!4m6!3m5!1s0x3ae173bb6932fce3:0x4a35b903f9c64c03!8m2!3d6.0328948!4d80.2167912!16zL20vMDI3M21r"
+  },
+  "ABOUT": {
+    "TITLE": "A Little Bit About Me",
+    "DESCRIPTION": {
+      "GREETING": "Hi there!",
+      "PARAGRAPH1": "My name is Hirun, and I'm currently a final year software engineering undergraduate studying at the Informatics Institute of Technology (IIT), an affiliated institution of the University of Westminster in the UK. I'm incredibly passionate about software engineering and I'm excited to see where my career takes me in the industry. !",
+      "PARAGRAPH2": "I completed my primary and secondary education at Richmond College Galle, where I excelled academically and achieved 9A's in my GCE O/L exams and ABB in my GCE A/L exams (Maths stream). I was also accepted into the Computer Science program at the University of Colombo School of Computing, but decided to pursue my degree at IIT instead.",
+      "PARAGRAPH3": "Throughout my time at IIT, I've had the opportunity to attend numerous hackathons and competitions, and was even awarded the Best 2nd Year Software Engineering Project 2021 at Cutting Edge.",
+      "PARAGRAPH4": "I also had the privilege of interning at 99x in July 2021, where I was able to gain hands-on experience working with diverse tech stacks and developing serverless architectures using AWS services. The experience was both challenging and rewarding, and I feel grateful for the opportunity to have worked with such a talented team.",
+      "PARAGRAPH5": "I'm passionate about staying up-to-date with the latest trends and technologies in the industry, and I'm always on the lookout for new opportunities to learn and grow."
+    },
+    "IMAGE_ALT": "About page image"
   }
 }
