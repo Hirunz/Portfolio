@@ -9,6 +9,7 @@ import {
 } from '@mui/material';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { MyDivider } from '../../Atoms/Divider';
 import { LargeCard } from '../../Atoms/LargeCard';
 import { PageHeading } from '../../Atoms/PageHeading';
 
@@ -32,22 +33,23 @@ function Contact() {
 
 const WebTechnologies = () => {
   return (
-    <List>
-      <ListItem disablePadding>
-        <ListItemIcon>
-          <Inbox />
-        </ListItemIcon>
-        <ListItemText>hello</ListItemText>
-      </ListItem>
-      <Divider />
-      <ListItem>
-        <ListItemIcon>
-          <Inbox />
-        </ListItemIcon>
-        <ListItemText>hello</ListItemText>
-      </ListItem>
-      <Divider />
-    </List>
+    <div className='px-md-5 px-sm-3 mx-3'>
+      <List>
+        <ListItem disablePadding>
+          <ListItemIcon>
+            <Inbox />
+          </ListItemIcon>
+          <ListItemText>hello</ListItemText>
+        </ListItem>
+        <MyDivider orientation='vertical' />
+        <ListItem>
+          <ListItemIcon>
+            <Inbox />
+          </ListItemIcon>
+          <ListItemText>hello</ListItemText>
+        </ListItem>
+      </List>
+    </div>
   );
 };
 

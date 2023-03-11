@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
 import { Divider, Typography } from '@mui/material';
 import ThemeColors from '../../Theme/Colours';
+import { MyDivider } from '../Atoms/Divider';
 
 const TopNavbar = () => {
   const { t, i18n } = useTranslation();
@@ -79,14 +80,18 @@ const TopNavbar = () => {
   };
 
   return (
-    <Navbar className='bg-dark' expand='md' fixed='top'>
+    <Navbar
+      className='bg-dark'
+      expand='md'
+      fixed='top'
+      style={{ borderBottom: '1px solid #464646' }}
+    >
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className=' mx-md-auto'>
           <NavBarItems />
         </Nav>
       </Navbar.Collapse>
-      <Divider variant='fullWidth' absolute={true} sx={{ color: 'white' }} />
     </Navbar>
   );
 };
