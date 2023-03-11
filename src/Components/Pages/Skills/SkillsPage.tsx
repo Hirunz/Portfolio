@@ -8,22 +8,24 @@ import {
   Typography,
 } from '@mui/material';
 import React from 'react';
-import { TestBR } from '../../Temp/ScrollTest';
+import { useTranslation } from 'react-i18next';
+import { LargeCard } from '../../Atoms/LargeCard';
+import { PageHeading } from '../../Atoms/PageHeading';
 
 function Contact() {
+  const { t, i18n } = useTranslation();
+
+  const getTranslationKey = (key: String) => {
+    console.log(key);
+    console.log(t(`ABOUT.${key}`));
+    return t(`SKILLS.${key}`);
+  };
+
   return (
-    <div
-      id='skills'
-      className='d-flex flex-column bg-dark'
-      style={{ paddingTop: '6vh' }}
-    >
-      <Typography> Skills Page</Typography>
+    <div id='skills' className='d-flex flex-column align-items-center'>
+      <PageHeading title={getTranslationKey('TITLE')} />
 
-      <div className='bg-dark'>
-        <p>Welcome to the skills page</p>
-
-        <WebTechnologies />
-      </div>
+      <LargeCard children={<WebTechnologies />}></LargeCard>
     </div>
   );
 }
@@ -31,20 +33,20 @@ function Contact() {
 const WebTechnologies = () => {
   return (
     <List>
-      {/* <ListItem disablePadding>
-        <ListItemIcon>
-          <Inbox />
-        </ListItemIcon>
-        <ListItemText>hello</ListItemText>
-      </ListItem>
-      <Divider />
       <ListItem disablePadding>
         <ListItemIcon>
           <Inbox />
         </ListItemIcon>
         <ListItemText>hello</ListItemText>
       </ListItem>
-      <Divider /> */}
+      <Divider />
+      <ListItem>
+        <ListItemIcon>
+          <Inbox />
+        </ListItemIcon>
+        <ListItemText>hello</ListItemText>
+      </ListItem>
+      <Divider />
     </List>
   );
 };
