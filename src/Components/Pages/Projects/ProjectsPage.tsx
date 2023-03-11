@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div id='projects'>
       <h2>Projects Page</h2>
-      <p>Welcome to the projects page</p>
+      8
       <TestBR />
     </div>
   );
