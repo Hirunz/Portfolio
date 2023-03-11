@@ -3,31 +3,32 @@ Theme generated using https://zenoo.github.io/mui-theme-creator/#Badge
 */
 import React from 'react';
 import { ThemeOptions, createTheme } from '@mui/material/styles';
+import ThemeColors from './Colours';
 
 export const themeOptions: ThemeOptions = {
   palette: {
     mode: 'dark',
     primary: {
-      main: '#0a9d90',
+      main: ThemeColors.primary,
     },
     secondary: {
-      main: '#087f90',
+      main: ThemeColors.secondary,
     },
     background: {
-      default: '#100e17',
-      paper: '#100e17',
+      default: ThemeColors.background,
+      paper: ThemeColors.background,
     },
     error: {
-      main: '#a4332b',
+      main: ThemeColors.error,
     },
     warning: {
-      main: '#e2a03f',
+      main: ThemeColors.warning,
     },
     info: {
-      main: '#692ac1',
+      main: ThemeColors.info,
     },
     success: {
-      main: '#26852b',
+      main: ThemeColors.success,
     },
   },
   spacing: 8,
@@ -36,32 +37,34 @@ export const themeOptions: ThemeOptions = {
   },
   typography: {
     h1: {
-      fontFamily: 'Noto Sans',
+      fontFamily: "'Baloo 2'",
       fontSize: '6.1rem',
     },
     h2: {
-      fontFamily: 'Noto Sans',
+      fontFamily: "'Baloo 2'",
     },
     h3: {
-      fontFamily: 'Noto Sans',
+      fontFamily: "'Baloo 2'",
     },
     h4: {
-      fontFamily: 'Noto Sans',
+      fontFamily: "'Baloo 2'",
+      fontSize: '2.3rem',
     },
     h5: {
-      fontFamily: 'Noto Sans',
+      fontFamily: "'Baloo 2'",
     },
     h6: {
-      fontFamily: 'Noto Sans',
+      fontFamily: "'Baloo 2'",
     },
     body1: {
-      fontFamily: 'Noto Sans',
+      fontFamily: "'Baloo 2'",
+      fontSize: '1.2rem',
     },
     body2: {
       fontFamily: 'Inconsolata',
     },
     button: {
-      fontFamily: 'Noto Sans',
+      fontFamily: "'Baloo 2'",
     },
     caption: {
       fontFamily: 'Inconsolata',
@@ -73,7 +76,7 @@ export const themeOptions: ThemeOptions = {
       fontFamily: 'Inconsolata',
     },
     subtitle2: {
-      fontFamily: 'Noto Sans',
+      fontFamily: "'Baloo 2'",
     },
   },
 };
