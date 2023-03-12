@@ -1,5 +1,6 @@
 {
   "NAVBAR": {
+    "LANGUAGE_TITLE": "Sprache",
     "HOME": "Startseite",
     "ABOUT": "Über mich",
     "SKILLS": "Fähigkeiten",
@@ -7,5 +8,25 @@
     "PROJECTS": "Projekte",
     "CONTACT": "Kontakt",
     "CV": "Lebenslauf"
+  },
+  "HOME": {
+    "NAME": "Hirun Kodituwakku",
+    "CURRENT_STATUS": "Software-Entwickler",
+    "FACEBOOK_LINK": "https://www.facebook.com/hirun.kodituwaku/",
+    "EMAIL_LINK": "hirunz2000@gmail.com",
+    "PHONE": "+94768452198",
+    "HOME_CITY": "https://www.google.com/maps/place/Galle/@6.0558904,80.1769774,13z/data=!3m1!4b1!4m6!3m5!1s0x3ae173bb6932fce3:0x4a35b903f9c64c03!8m2!3d6.0328948!4d80.2167912!16zL20vMDI3M21r"
+  },
+  "ABOUT": {
+    "TITLE": "Ein bisschen über mich",
+    "DESCRIPTION": {
+      "GREETING": "Hallo!",
+      "PARAGRAPH1": "Mein Name ist Hirun und ich bin derzeit im letzten Studienjahr meines Software Engineering-Studiums am Informatics Institute of Technology (IIT), einer angeschlossenen Institution der University of Westminster im Vereinigten Königreich. Ich bin unglaublich leidenschaftlich für Software Engineering und bin gespannt, wohin meine Karriere in der Branche führt!",
+      "PARAGRAPH2": "Ich absolvierte meine Primär- und Sekundarschulbildung am Richmond College Galle, wo ich akademisch hervorragte und 9A's in meinen GCE O/L-Prüfungen und ABB in meinen GCE A/L-Prüfungen (Mathematik-Stream) erzielte. Ich wurde auch in das Informatikprogramm der University of Colombo School of Computing aufgenommen, entschied mich jedoch stattdessen für mein Studium am IIT.",
+      "PARAGRAPH3": "Während meiner Zeit am IIT hatte ich die Möglichkeit, zahlreiche Hackathons und Wettbewerbe zu besuchen und wurde sogar mit dem Best 2nd Year Software Engineering Project 2021 bei Cutting Edge ausgezeichnet.",
+      "PARAGRAPH4": "Ich hatte auch das Privileg, im Juli 2021 ein Praktikum bei 99x zu absolvieren, wo ich praktische Erfahrungen mit verschiedenen Technologien sammeln und serverlose Architekturen mit AWS-Services entwickeln konnte. Die Erfahrung war sowohl herausfordernd als auch lohnend, und ich fühle mich dankbar für die Gelegenheit, mit einem so talentierten Team zusammengearbeitet zu haben.",
+      "PARAGRAPH5": "Ich bin leidenschaftlich daran interessiert, über die neuesten Trends und Technologien in der Branche auf dem Laufenden zu bleiben und suche immer nach neuen Möglichkeiten zum Lernen und Wachsen."
+    },
+    "IMAGE_ALT": "Bild auf der Über mich Seite"
   }
 }
