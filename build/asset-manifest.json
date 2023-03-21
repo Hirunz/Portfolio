@@ -1,16 +1,37 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.458fdbd6.js",
-    "static/js/787.749b4a44.chunk.js": "/static/js/787.749b4a44.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/static/css/main.440a0482.css",
+    "main.js": "/static/js/main.f0bf095c.js",
+    "static/media/b.jpg": "/static/media/b.3e6c29e7ed13d0008cea.jpg",
+    "static/media/profile-pic.png": "/static/media/profile-pic.5c32b6dd99c3fca88fe8.png",
+    "static/media/about-bg.png": "/static/media/about-bg.fe317ef593c39e757164.png",
+    "static/media/pocoo_flask-icon.svg": "/static/media/pocoo_flask-icon.2cca57813dda05a32e3922b63222945f.svg",
+    "static/media/apple_xcode-icon.svg": "/static/media/apple_xcode-icon.9a41518dfa5cd020960141e67094ec36.svg",
+    "static/media/github-icon.svg": "/static/media/github-icon.a2eafb2af9a1dcc15adc5435778e9625.svg",
+    "static/media/play-seeklogo.com.svg": "/static/media/play-seeklogo.com.64cab1c25a46644fa26ea2dec3f94d24.svg",
+    "static/media/javascript-icon.svg": "/static/media/javascript-icon.081a6e35732105b0c8e8cc9d0e9aebbd.svg",
+    "static/media/nodejs-icon.svg": "/static/media/nodejs-icon.502737ea1f44b9be4170cafd2bace4e7.svg",
+    "static/media/sqlite-icon.svg": "/static/media/sqlite-icon.237e776b1921b0cd3041b9237fe9b63a.svg",
+    "static/media/reactjs-icon.svg": "/static/media/reactjs-icon.6c1d44b8c59f0f72ff199a54ceed774c.svg",
+    "static/media/stepFunctions.svg": "/static/media/stepFunctions.3aa050953e32b3e06b992a9c86b5f25b.svg",
+    "static/media/graphql-icon.svg": "/static/media/graphql-icon.e335785b409b208e429d32813d4c00a2.svg",
+    "static/media/mongodb-icon.svg": "/static/media/mongodb-icon.0781b723446e1f8a1734f7831a9c3313.svg",
+    "static/media/getbootstrap-icon.svg": "/static/media/getbootstrap-icon.5d590f6c245312fdf16a7e8ab1d6ba44.svg",
+    "static/media/typescriptlang-icon.svg": "/static/media/typescriptlang-icon.78aa78046122abe258fee49f1dfe2f02.svg",
+    "static/media/tensorflow-icon.svg": "/static/media/tensorflow-icon.f5088e8e377a3d03f117bb28ce544789.svg",
+    "static/media/expressjs-icon.svg": "/static/media/expressjs-icon.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.458fdbd6.js.map": "/static/js/main.458fdbd6.js.map",
-    "787.749b4a44.chunk.js.map": "/static/js/787.749b4a44.chunk.js.map"
+    "static/media/git-scm-icon.svg": "/static/media/git-scm-icon.6d27b5e0cde4ddb87e031ca706aa8350.svg",
+    "static/media/w3_html5-icon.svg": "/static/media/w3_html5-icon.87f3f64abde68319b96661c04229b687.svg",
+    "static/media/android-tile.svg": "/static/media/android-tile.9ea10e16209cfe72e5f01d426b7bb459.svg",
+    "static/media/firebase-icon.svg": "/static/media/firebase-icon.82a35fc0b90d124a8e7333989f767fd3.svg",
+    "static/media/material-ui-1.svg": "/static/media/material-ui-1.fd510ed8518b192069590b04e2e6348a.svg",
+    "static/media/angular-icon.svg": "/static/media/angular-icon.00d10ea694079f70b937fd1d5d7afc20.svg",
+    "main.440a0482.css.map": "/static/css/main.440a0482.css.map",
+    "main.f0bf095c.js.map": "/static/js/main.f0bf095c.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.458fdbd6.js"
+    "static/css/main.440a0482.css",
+    "static/js/main.f0bf095c.js"
   ]
 }
