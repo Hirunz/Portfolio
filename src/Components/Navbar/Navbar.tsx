@@ -26,7 +26,7 @@ const TopNavbar = () => {
         as={Link}
         to={props.id}
         smooth={true}
-        className='nav-link'
+        className='nav-link px-2'
         style={{ cursor: 'pointer' }}
       >
         {
