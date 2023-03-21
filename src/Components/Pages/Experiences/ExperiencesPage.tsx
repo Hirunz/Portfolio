@@ -15,13 +15,6 @@ const ExperiencesPage = () => {
     console.log(key);
     return t(`EXPERIENCES.${key}`);
   };
-  const ExperiencePageContent = () => {
-    return (
-      <>
-        <Timeline />
-      </>
-    );
-  };
 
   return (
     <div
@@ -30,7 +23,7 @@ const ExperiencesPage = () => {
       // style={{ height: '132vh' }}
     >
       <PageHeading title={getTranslationKey('TITLE')} />
-      <LargeCard children={<ExperiencePageContent />} noBackgroundGray />
+      <LargeCard children={<Timeline />} noBackgroundGray />
     </div>
   );
 };
