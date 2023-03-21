@@ -29,11 +29,35 @@
     },
     "IMAGE_ALT": "About page image"
   },
+  "EXPERIENCES": {
+    "TITLE": "Experiences",
+    "PROFFESSIONAL": {
+      "TITLE": " Professional Experience",
+      "99X_PERIOD": " 2021 JULY - 2022 JULY (13M)",
+      "99X_DESCRIPTION1": "During my internship at 99x, I worked on a cloud-based gym security system. The application offers web dashboard for management and a mobile app for users, with the web dashboard built using React and the mobile app built using React Native.",
+      "99X_DESCRIPTION2": "My primary role was to work on the backend, designing and writing data transfers between third-party systems and the application. I was also involved in system design, specifically designing AWS state machines to fetch data overnight and through webhooks. Additionally, worked in the frontend as well."
+    },
+    "HIGHER_EDUCATION": {
+      "TITLE": "Higher Education",
+      "IIT_PERIOD": "2020 JAN - 2023 JULY",
+      "IIT_DESCRIPTION1": " I am currently following the B.ENG Software Engineering Honours degree course at ",
+      "IIT_DESCRIPTION2": ", which is affiliated with the ",
+      "IIT_DESCRIPTION3": ". Throughout the four years of study, I have gained a comprehensive understanding of various programming languages and frameworks, software development methodologies and practices and etc. ",
+      "IIT_DESCRIPTION4": " In addition to my academic achievements, I have actively participated in various software engineering competitions and hackathons which not only helped me enhance my skills but also taught me the importance of teamwork, communication, and time management."
+    },
+    "SCHOOL": {
+      "TITLE": "Primary and Seconary Education",
+      "DESCRIPTION1": "  I am a former student of ",
+      "DESCRIPTION2": ", where I studied from grade 1 to 13. During my time at school, I actively participated in various extracurricular activities, including athletics and numerous clubs and societies, while still managing to perform well in my studies. I passed my GCE O Level exams earning 9A's (including optional subjects English Literature, ICT, and Commerce), and then went on to complete my GCE A Levels with a Maths stream, earning ABB. Based my A level results, I was selected to pursue a Computer Science degree at the University of Colombo School of Computing (UCSC)."
+    },
+    "VOLUNTEER": {
+      "MEMBER": "Member",
+      "VOLUNTEER": "Volunteer",
+      "CHIEF_ORGANIZER": "Chief Organizer"
+    }
+  },
   "SKILLS": {
     "TITLE": "Skill Inventory"
-  },
-  "EXPERIENCES": {
-    "TITLE": "Experiences"
   },
   "ACHIEVEMENTS": {
     "TITLE": "Achievements"

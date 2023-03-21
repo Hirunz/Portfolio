@@ -16,8 +16,13 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { Link, Typography } from '@mui/material';
 import { MyDivider } from '../../Atoms/Divider';
+import { t } from 'i18next';
 
 export const Timeline = () => {
+  const getTranslationKey = (key: String) => {
+    console.log(key);
+    return t(`EXPERIENCES.${key}`);
+  };
   const TimelineSection = (props: {
     type: 'present' | 'past';
     icon: 'work' | 'school' | 'uni' | 'selection' | 'volunteer';
@@ -115,7 +120,7 @@ export const Timeline = () => {
               style={{ color: ThemeColors.white }}
               className='pb-3'
             >
-              Professional Experience
+              {getTranslationKey('PROFFESSIONAL.TITLE')}
             </Typography>
             <MyDivider opacity={0.8} />
             <div className='my-3'>
@@ -138,23 +143,17 @@ export const Timeline = () => {
                 style={{ color: ThemeColors.primary }}
                 className='mb-2'
               >
-                2021 JULY - 2022 JULY (13M)
+                {getTranslationKey('PROFFESSIONAL.99X_PERIOD')}
               </Typography>
               <Typography
                 variant='h6'
                 align='left'
                 style={{ color: ThemeColors.white }}
               >
-                During my internship at 99x, I worked on a cloud-based gym
-                security system. The application offers web dashboard for
-                management and a mobile app for users, with the web dashboard
-                built using React and the mobile app built using React Native.
+                {getTranslationKey('PROFFESSIONAL.99X_PERIOD')}
+                {getTranslationKey('PROFFESSIONAL.99X_DESCRIPTION1')}
                 <br /> <br />
-                My primary role was to work on the backend, designing and
-                writing data transfers between third-party systems and the
-                application. I was also involved in system design, specifically
-                designing AWS state machines to fetch data overnight and through
-                webhooks. Additionally, worked in the frontend as well.
+                {getTranslationKey('PROFFESSIONAL.99X_DESCRIPTION2')}
               </Typography>
             </div>
           </div>
@@ -171,7 +170,7 @@ export const Timeline = () => {
               style={{ color: ThemeColors.white }}
               className='pb-3'
             >
-              Higher Education
+              {getTranslationKey('HIGHER_EDUCATION.TITLE')}
             </Typography>
             <MyDivider opacity={0.8} />
             <div className='my-3'>
@@ -194,7 +193,7 @@ export const Timeline = () => {
                 style={{ color: ThemeColors.primary }}
                 className='mb-2'
               >
-                2020 JAN - 2023 JULY
+                {getTranslationKey('HIGHER_EDUCATION.IIT_PERIOD')}
               </Typography>
 
               <Typography
@@ -202,8 +201,7 @@ export const Timeline = () => {
                 align='left'
                 style={{ color: ThemeColors.white }}
               >
-                I am currently following the B.ENG Software Engineering Honours
-                degree course at{' '}
+                {getTranslationKey('HIGHER_EDUCATION.IIT_DESCRIPTION1')}
                 <Link
                   href='https://www.iit.ac.lk/'
                   target={'_blank'}
@@ -212,7 +210,7 @@ export const Timeline = () => {
                 >
                   Informatics Institute of Technology
                 </Link>
-                , which is affiliated with the{' '}
+                {getTranslationKey('HIGHER_EDUCATION.IIT_DESCRIPTION2')}
                 <Link
                   href='https://www.westminster.ac.uk/'
                   target={'_blank'}
@@ -221,17 +219,10 @@ export const Timeline = () => {
                 >
                   University of Westminster
                 </Link>
-                . Throughout the four years of study, I have gained a
-                comprehensive understanding of various programming languages and
-                frameworks, software development methodologies and practices and
-                etc.
+                {getTranslationKey('HIGHER_EDUCATION.IIT_DESCRIPTION3')}
                 <br />
                 <br />
-                In addition to my academic achievements, I have actively
-                participated in various software engineering competitions and
-                hackathons which not only helped me enhance my skills but also
-                taught me the importance of teamwork, communication, and time
-                management.
+                {getTranslationKey('HIGHER_EDUCATION.IIT_DESCRIPTION4')}
               </Typography>
             </div>
           </div>
@@ -248,7 +239,7 @@ export const Timeline = () => {
               style={{ color: ThemeColors.white }}
               className='pb-3'
             >
-              Primary and Seconary Education
+              {getTranslationKey('SCHOOL.TITLE')}
             </Typography>
             <MyDivider opacity={0.8} />
             <div className='my-3'>
@@ -279,7 +270,7 @@ export const Timeline = () => {
                 align='left'
                 style={{ color: ThemeColors.white }}
               >
-                I am a former student of{' '}
+                {getTranslationKey('SCHOOL.DESCRIPTION1')}
                 <Link
                   href='https://www.richmondcollege.lk/'
                   target={'_blank'}
@@ -288,16 +279,7 @@ export const Timeline = () => {
                 >
                   Richmond College Galle
                 </Link>
-                , where I studied from grade 1 to 13. During my time at school,
-                I actively participated in various extracurricular activities,
-                including athletics and numerous clubs and societies, while
-                still managing to perform well in my studies. I passed my GCE O
-                Level exams earning <b>9A's</b> (including optional subjects
-                English Literature, ICT, and Commerce), and then went on to
-                complete my GCE A Levels with a Maths stream, earning <b>ABB</b>
-                . Based my A level results, I was selected to pursue a Computer
-                Science degree at the University of Colombo School of Computing
-                (UCSC).
+                {getTranslationKey('SCHOOL.DESCRIPTION2')}
               </Typography>
             </div>
           </div>
@@ -319,27 +301,27 @@ export const Timeline = () => {
             <MyDivider opacity={0.8} />
             <VolunteerRow
               name='FOSS Community - IIT'
-              role='Member'
+              role={getTranslationKey('VOLUNTEER.MEMBER')}
               period='2020 - present'
             />
             <VolunteerRow
               name='Sasnaka Sansada Foundation'
-              role='Volunteer'
+              role={getTranslationKey('VOLUNTEER.VOLUNTEER')}
               period='2020 - present'
             />
             <VolunteerRow
               name='Science Society - Richmond college'
-              role='Member'
+              role={getTranslationKey('VOLUNTEER.MEMBER')}
               period='2018 - 2019'
             />
             <VolunteerRow
               name='UN Study Circle - Richmond college'
-              role='Chief Organizer'
+              role={getTranslationKey('VOLUNTEER.CHIEF_ORGANIZER')}
               period='2017 - 2018'
             />
             <VolunteerRow
               name='UN Study Circle - Richmond college'
-              role='Member'
+              role={getTranslationKey('VOLUNTEER.MEMBER')}
               period='2015 - 2017'
             />
           </div>
