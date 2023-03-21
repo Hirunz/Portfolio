@@ -56,9 +56,9 @@ const TopNavbar = () => {
         <PageLink id={'about'} translationKey={'ABOUT'} />
         <PageLink id={'skills'} translationKey={'SKILLS'} />
         <PageLink id={'experiences'} translationKey={'EXPERIENCES'} />
+        <PageLink id={'achievements'} translationKey={'ACHIEVEMENTS'} />
         <PageLink id={'projects'} translationKey={'PROJECTS'} />
         <PageLink id={'contact'} translationKey={'CONTACT'} />
-        <PageLink id={'cv'} translationKey={'CV'} />
 
         <Nav>
           <NavDropdown

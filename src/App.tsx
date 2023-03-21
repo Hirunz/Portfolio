@@ -9,7 +9,7 @@ import Home from './Components/Pages/Home/HomePage';
 import About from './Components/Pages/About/AboutPage';
 import Contact from './Components/Pages/Contact/ContactPage';
 import { SkillsPage } from './Components/Pages/Skills/SkillsPage';
-import CVPage from './Components/Pages/CV/CVPage';
+import AchievementsPage from './Components/Pages/Achievements/AchievementsPage';
 import ExperiencesPage from './Components/Pages/Experiences/ExperiencesPage';
 import ProjectsPage from './Components/Pages/Projects/ProjectsPage';
 import { Container } from '@mui/system';
@@ -29,9 +29,9 @@ function App() {
 
       <SkillsPage />
       <ExperiencesPage />
+      <AchievementsPage />
       <ProjectsPage />
       <Contact />
-      <CVPage />
     </div>
   );
 }

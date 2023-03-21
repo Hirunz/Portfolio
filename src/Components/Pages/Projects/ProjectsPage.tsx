@@ -1,12 +1,25 @@
+import { t } from 'i18next';
 import React from 'react';
+import { PageHeading } from '../../Atoms/PageHeading';
 import { TestBR } from '../../Temp/ScrollTest';
+
+const getTranslationKey = (key: String) => {
+  console.log(key);
+  return t(`PROJECTS.${key}`);
+};
 
 function Contact() {
   return (
-    <div id='projects'>
-      <h2>Projects Page</h2>
-      8
-      <TestBR />
+    <div
+      id='projects'
+      className='d-flex flex-column align-items-center'
+      // style={{ height: '132vh' }}
+    >
+      <PageHeading title={getTranslationKey('TITLE')} />
+      <div
+        style={{ width: '70%', minWidth: 380, borderRadius: '0.5rem' }}
+        className=' bg-dark  py-5 '
+      ></div>
     </div>
   );
 }

@@ -5,6 +5,7 @@ type LargeCardProps = {
   width?: string;
   minWidth?: string;
   borderRadius?: string;
+  noBackgroundGray?: boolean;
 };
 export const LargeCard = (props: LargeCardProps) => {
   return (
@@ -14,7 +15,7 @@ export const LargeCard = (props: LargeCardProps) => {
         minWidth: props.minWidth || '380',
         borderRadius: props.borderRadius || '0.5rem',
       }}
-      className=' bg-dark  py-5'
+      className={`${props.noBackgroundGray ? '' : 'bg-dark'}  py-5`}
     >
       {props.children}
     </div>

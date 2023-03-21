@@ -61,7 +61,6 @@ export const SkillsPage = () => {
 
   const getTranslationKey = (key: String) => {
     console.log(key);
-    console.log(t(`ABOUT.${key}`));
     return t(`SKILLS.${key}`);
   };
 
@@ -69,7 +68,7 @@ export const SkillsPage = () => {
     <div id='skills' className='d-flex flex-column align-items-center'>
       <PageHeading title={getTranslationKey('TITLE')} />
 
-      <LargeCard children={<WebTechnologies />}></LargeCard>
+      <LargeCard children={<WebTechnologies />} noBackgroundGray></LargeCard>
     </div>
   );
 };

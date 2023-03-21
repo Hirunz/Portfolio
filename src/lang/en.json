@@ -7,7 +7,7 @@
     "EXPERIENCES": "Experiences",
     "PROJECTS": "Projects",
     "CONTACT": "Contact",
-    "CV": "CV"
+    "ACHIEVEMENTS": "Achievements"
   },
   "HOME": {
     "NAME": "Hirun Kodituwakku",
@@ -31,5 +31,17 @@
   },
   "SKILLS": {
     "TITLE": "Skill Inventory"
+  },
+  "EXPERIENCES": {
+    "TITLE": "Experiences"
+  },
+  "ACHIEVEMENTS": {
+    "TITLE": "Achievements"
+  },
+  "PROJECTS": {
+    "TITLE": "Projects"
+  },
+  "CONTACT": {
+    "TITLE": "Contact"
   }
 }
